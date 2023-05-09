@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'omyu_pretty';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2')
+		format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SUITE';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2')
+		format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SUITE';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-SemiBold.woff2')
+		format('woff2');
+	font-weight: 600;
+	font-style: normal;
+}
+
+body,
+button,
+input {
+	font-family: 'SUITE', sans-serif;
+}
+
+ul,
+li,
+ol {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+}
+
+.sr-only {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+	margin: -1px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+.todo-area {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+
+	input,
+	.text {
+		font-family: 'omyu_pretty', sans-serif;
+	}
+}
+
+.todo-inner {
+	width: 600px;
+	min-height: 700px;
+	border: 1px solid #ddd;
+	padding: 10px 20px;
+
+	li {
+		display: flex;
+		gap: 4px;
+	}
+
+	input {
+		border: 1px solid #a3a3a3;
+	}
+}
+
+.todo-title {
+	font-size: 64px;
+	margin-bottom: 24px;
+	font-weight: 600;
+	color: #3b3b3b;
+
+	span {
+		font-size: 32px;
+		color: #d5d5d5;
+	}
+}
+
+.checkbox {
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #a3a3a3;
+	border-radius: 4px;
+}
