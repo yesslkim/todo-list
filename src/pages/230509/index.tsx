@@ -9,9 +9,10 @@ const TodoProject = () => {
 		<main className='todo-area'>
 			<RecoilRoot>
 				<article className='todo-inner'>
-					<h2>
-						Todo List <br /> {THIS_YEAR}
+					<h2 className='todo-title'>
+						Todo List <span>{THIS_YEAR}</span>
 					</h2>
+					<input type='text' placeholder='Add a task...' />
 					<TodoList>
 						<TodoItem />
 					</TodoList>
